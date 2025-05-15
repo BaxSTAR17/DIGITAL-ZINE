@@ -46,7 +46,7 @@ main.wrap {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     display: block;
-    scale: 0.9
+    scale: 0.8
 } .paper {
     transform-origin: center left;
     height: 750px;

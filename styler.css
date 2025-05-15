@@ -1,0 +1,173 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    overflow: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+main.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: black;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+} .book {
+    width: 1050px;
+    height: 750px;
+    position:relative;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+} .paper {
+    transform-origin: center left;
+    height: 750px;
+    width: 525px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    transform: rotateY(-10deg);
+} .page {
+    height: 750px;
+    width: 525px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 11px;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+} .back {
+    transform: rotateY(180deg)
+} #cover .back {
+    background-image: url(./cover.png);
+    background-size: cover;
+    filter:saturate(0)
+} #cover .front {
+    background-image: url(./cover.png);
+    background-size: cover;
+} button {
+    cursor: pointer;
+    background-color: green;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    border: 3px solid white;
+    transition: all 0.2s ease;
+} button:hover {
+    opacity: 0.8;
+    scale: 0.9
+} #a .front { background-image: url(./3.png);
+    background-size: cover; }
+#a .back { background-image: url(./4.png);
+    background-size: cover; }
+#b .front { background-image: url(./5.png);
+    background-size: cover; }
+#b .back { background-image: url(./6.png);
+    background-size: cover; }
+#c .front { background-image: url(./7.png);
+    background-size: cover; }
+#c .back { background-image: url(./8.png);
+    background-size: cover; }
+#d .front { background-image: url(./9.png);
+    background-size: cover; }
+#d .back { background-image: url(./10.png);
+    background-size: cover; }
+#e .front { background-image: url(./11.png);
+    background-size: cover; }
+#e .back { background-image: url(./12.png);
+    background-size: cover; }
+#f .front { background-image: url(./13.png);
+    background-size: cover; }
+#f .back { background-image: url(./14.png);
+    background-size: cover; }
+#g .front { background-image: url(./15.png);
+    background-size: cover; }
+#g .back { background-image: url(./backcover.png);
+    background-size: cover; }
+.flipbook { display: none; }
+
+@media (width <= 62rem) {
+    button { width: 30px; height: 30px; font-size: 1rem; }
+    .book {display: none;}
+    .flipbook {
+        display: block;
+        width: 340px;
+        height: 500px;
+        position:relative;
+        perspective: 1000px;
+        -webkit-perspective: 1000px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        scale: 1.1;
+        align-self: flex-start;
+    } .pad {
+        width: 100%;
+        height: 485px;
+        background-color: white;
+        transform-origin: top center;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transition: all 0.5s;
+        display: flex;
+        box-sizing: border-box;
+        padding: 30px;
+        padding-bottom: 1px;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 10;
+    }
+    #face { background-image: url(./cover.png);
+    background-size: cover; justify-content: space-around}
+    #a1 { background-image: url(./3.png);
+    background-size: cover; justify-content: space-around }
+    #b1 { background-image: url(./4.png);
+    background-size: cover; justify-content: space-around }
+    #c1 { background-image: url(./5.png);
+    background-size: cover; justify-content: space-around }
+    #d1 { background-image: url(./6.png);
+    background-size: cover; justify-content: space-around }
+    #e1 {background-image: url(./7.png);
+    background-size: cover; justify-content: space-around }
+    #f1 { background-image: url(./8.png);
+    background-size: cover; justify-content: space-around }
+    #g1 { background-image: url(./9.png);
+    background-size: cover; justify-content: space-around }
+    #h1 { background-image: url(./10.png);
+    background-size: cover; justify-content: space-around }
+    #i1 { background-image: url(./11.png);
+    background-size: cover; justify-content: space-around }
+    #j1 { background-image: url(./12.png);
+    background-size: cover; justify-content: space-around }
+    #k1 { background-image: url(./13.png);
+    background-size: cover; justify-content: space-around }
+    #l1 { background-image: url(./14.png);
+    background-size: cover; justify-content: space-around }
+    #m1 { background-image: url(./15.png);
+    background-size: cover; justify-content: space-around }
+    #n1 { background-image: url(./backcover.png);
+    background-size: cover; justify-content: space-around }
+}

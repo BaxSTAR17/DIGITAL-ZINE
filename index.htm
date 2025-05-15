@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFLATION</title>
+    <link rel="stylesheet" href="./styler.css">
+    <script defer src="./scripter.js"></script>
+</head>
+<body>
+    <main class="wrap">
+        <section class="book">
+            <div class="paper" id="g">
+                <div class="page front" onclick="turnPage('g', '-166deg')">
+                    <button onclick="turnPage('g', '-166deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('g', '-10deg')">
+                    <button onclick="turnPage('g', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="f">
+                <div class="page front" onclick="turnPage('f', '-168deg')">
+                    <button onclick="turnPage('f', '-168deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('f', '-10deg')">
+                    <button onclick="turnPage('f', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="e">
+                <div class="page front" onclick="turnPage('e', '-170deg')">
+                    <button onclick="turnPage('e', '-170deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('e', '-10deg')">
+                    <button onclick="turnPage('e', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="d">
+                <div class="page front" onclick="turnPage('d', '-172deg')">
+                    <button onclick="turnPage('d', '-172deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('d', '-10deg')">
+                    <button onclick="turnPage('d', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="c">
+                <div class="page front" onclick="turnPage('c', '-174deg')">
+                    <button onclick="turnPage('c', '-174deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('c', '-10deg')">
+                    <button onclick="turnPage('c', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="b">
+                <div class="page front" onclick="turnPage('b', '-176deg')">
+                    <button onclick="turnPage('b', '-176deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('b', '-10deg')" class="backer">
+                    <button onclick="turnPage('b', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="a">
+                <div class="page front" onclick="turnPage('a', '-178deg')">
+                    <button onclick="turnPage('a', '-178deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('a', '-10deg')">
+                    <button onclick="turnPage('a', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+            <div class="paper" id="cover">
+                <div class="page front" onclick="turnPage('cover', '-180deg')">
+                    <button style="align-self: flex-end" onclick="turnPage('cover', '-180deg')" class="nexter">&gt;</button>
+                </div>
+                <div class="page back" onclick="turnPage('cover', '-10deg')">
+                    <button onclick="turnPage('cover', '-10deg')" class="backer">&lt;</button>
+                </div>
+            </div>
+        </section>
+        <section class="flipbook">
+            <div class="pad" id="n1">
+                <button onclick="flipPage('m1', '0deg')" class="backer">v</button>
+            </div>
+            <div class="pad" id="m1">
+                <button onclick="flipPage('l1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('m1', '154deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="l1">
+                <button onclick="flipPage('k1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('l1', '156deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="k1">
+                <button onclick="flipPage('j1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('k1', '158deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="j1">
+                <button onclick="flipPage('i1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('j1', '160deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="i1">
+                <button onclick="flipPage('h1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('i1', '162deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="h1">
+                <button onclick="flipPage('g1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('h1', '164deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="g1">
+                <button onclick="flipPage('f1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('g1', '166deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="f1">
+                <button onclick="flipPage('e1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('f1', '168deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="e1">
+                <button onclick="flipPage('d1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('e1', '170deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="d1">
+                <button onclick="flipPage('c1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('d1', '172deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="c1">
+                <button onclick="flipPage('b1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('c1', '174deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="b1">
+                <button onclick="flipPage('a1', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('b1', '176deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="a1">
+                <button onclick="flipPage('face', '0deg')" class="backer">&lt;</button>
+                <button onclick="flipPage('a1', '178deg')" class="nexter">&gt;</button>
+            </div>
+            <div class="pad" id="face">
+                <button onclick="flipPage('face', '180deg')" class="nexter" style="margin-bottom: 25px;">^</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

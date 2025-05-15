@@ -6,15 +6,37 @@ html, body {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+.loader {
+    background-color: #090147;
+    background-image: url(./load.gif);
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    z-index: 200;
+    transition: all 0.3s ease;
+}
+@keyframes fade {
+    0% { opacity: 1; }
+    99% { opacity: 0; }
+    100% { display: none; }
+}
+.unload {
+    animation: fade 1s ease forwards
+}
 main.wrap {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100dvw;
     height: 100dvh;
-    background-color: black;
+    background-color: #04001e;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    position: relative;
 } .book {
     width: 1050px;
     height: 750px;
@@ -24,6 +46,7 @@ main.wrap {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     display: block;
+    scale: 0.9
 } .paper {
     transform-origin: center left;
     height: 750px;

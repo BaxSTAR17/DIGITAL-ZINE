@@ -31,3 +31,8 @@ function flipPage(e, turn) {
     if(turn == '0deg' && mpage > 1) mpage--
     else { if(mpage < 15) mpage++ } 
 }
+
+addEventListener("load", (event) => { 
+    const loader = document.querySelector('.loader')
+    loader.classList.add("unload")    
+})
